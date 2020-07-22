@@ -1,0 +1,22 @@
+<div style="background-color: gray;">
+  <mat-toolbar>
+    <div class="main-header">
+          <div class="menu-collapse">
+            <a mat-button (click)="toggleSideNav()"><mat-icon color="primary">reorder</mat-icon></a>
+          </div>
+          <div class="header-options">
+            <a mat-button><mat-icon color="primary">trending_up</mat-icon></a>
+            <a mat-button><mat-icon color="primary">notifications_active</mat-icon></a>
+            <a mat-button><mat-icon color="primary">message</mat-icon></a>
+            <button mat-button [matMenuTriggerFor]="menu"><mat-icon color="primary"> person_pin</mat-icon>
+              <mat-icon>arrow_drop_down</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+          </div>
+    </div>
+  </mat-toolbar>
+</div> 

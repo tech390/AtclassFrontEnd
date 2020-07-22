@@ -1,0 +1,33 @@
+mat-sidenav-container {
+    height: 100%;
+  }
+
+mat-sidenav {
+  background-color: #eee;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc !important;  
+  -moz-box-shadow:    3px 3px 5px 6px #ccc !important;  
+  box-shadow:         2px 2px 5px 4px #ccc !important; 
+}
+
+.side-nav{
+  width: 240px;
+}
+
+.side-nav.close{
+  width: 80px;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.side-nav.open{
+  width: 240px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.2s;
+}
+
+.side-panel-items{
+  list-style-type: none;
+  padding-top: 40px;
+}

@@ -1,0 +1,38 @@
+<app-main-nav></app-main-nav>
+<mat-sidenav-container style="height: 100%;" class="side-container-wrapper">
+    <mat-sidenav class="side-nav"  [class.close]="!sidenav_val" [class.open]="sidenav_val"
+     mode="side" opened>
+     <ng-template [ngIf]="sidenav_val" [ngIfElse]="onlyIcons">
+      <ul id="side-panel-items-wrapper" style="padding-left:25px">
+        <li class="side-panel-items">
+          <a style="margin-top: 6px; float: left;">Community or Group</a>
+          <a routerLink="group/create-group" style="margin-left: 15px;"><mat-icon style="font-size:35px">group_add</mat-icon></a>
+        </li>
+        <li class="side-panel-items">
+          <a style="margin-top: 6px; float: left;">Community or Groups</a>
+          <a style="margin-left: 15px;"><mat-icon style="font-size:35px">push_pin</mat-icon></a>
+        </li>
+        <li class="side-panel-items">
+          <a style="margin-top: 6px; float: left;">Community or Groups</a>
+          <a style="margin-left: 15px;"><mat-icon style="font-size:35px">person_search</mat-icon></a>
+        </li>
+      </ul>
+     </ng-template>
+     <ng-template #onlyIcons>
+      <ul id="side-panel-items-wrapper" style="padding-left: 20px;">
+        <li class="side-panel-items">
+          <a routerLink="/create-group"><mat-icon style="font-size: 45px;">group_add</mat-icon></a>
+        </li>
+        <li class="side-panel-items">
+          <a><mat-icon style="font-size: 45px;">push_pin</mat-icon></a>
+        </li>
+        <li class="side-panel-items">
+          <a><mat-icon style="font-size: 45px;">person_search</mat-icon></a>
+        </li>
+      </ul>
+     </ng-template>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
