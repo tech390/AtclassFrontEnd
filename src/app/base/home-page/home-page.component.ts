@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
+  showValue = false;
   constructor() { }
 
   ngOnInit() {
+    if (localStorage.getItem('token') !== null) {
+      this.showValue = true;
+    }
   }
 
 }

@@ -8,21 +8,21 @@ import { SharedModule } from '../shared/shared.module';
 import { MainNavComponent } from './main-nav/main-nav.component';
 
 const routes: Routes = [
-  { 
+  {
     path: '', component: BaseComponent,
     children: [
-      { path: 'home-page',component: HomePageComponent},
-      { path: 'create-group',component: CreateGroupComponent}
+      { path: 'home-page', component: HomePageComponent },
+      { path: 'create-group', component: CreateGroupComponent }
     ]
-  } 
+  }
 ]
 @NgModule({
   declarations: [
-     BaseComponent,
-     HomePageComponent,
-     CreateGroupComponent,
-     MainNavComponent
-    ],
+    BaseComponent,
+    HomePageComponent,
+    CreateGroupComponent,
+    MainNavComponent
+  ],
   imports: [
     CommonModule,
     SharedModule,
