@@ -1,18 +1,38 @@
-<div style="margin-left: 35%;margin-top: 10%;">
-        <form class="login-form" styel=" background-color: lightgrey;" [formGroup]="loginForm" (ngSubmit)="login()">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more"></div>
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="login100-form login-form" [formGroup]="loginForm" (ngSubmit)="login()">
+					<span class="login100-form-title p-b-59">
+						Login
+					</span>
 
-        <div class="form-group" style="width: 50%">
-            <label for="exampleInputEmail1">Username</label>
-            <input type="text" class="form-control" formControlName="username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
-        </div>
-        <div class="form-group" style="width: 50%">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Log Me</button>
-
-        </form>
-        <div style="margin-top: 30px;">
-        <a (click)="signup()" style="text-decoration: none;cursor: pointer;color: blue">New User Register Here</a>
-        </div>
-</div>  
+					<div class="wrap-input100">
+						<span class="label-input100">User Name</span>
+						<input type="text" class="form-control input100" formControlName="username" id="exampleInputEmail1" placeholder="Enter username" required>
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100">
+						<span class="label-input100">Password</span>
+						<input type="password" class="form-control input100" formControlName="password" id="exampleInputPassword1" placeholder="Password" required>
+						<span class="focus-input100"></span>
+					</div>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							 <button type="submit" class="login100-form-btn" [disabled]="!loginForm.valid">
+								Login
+							</button>
+                        </div>
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn" (click)="signup()"> 
+                             Signup
+                             </button>
+						</div>
+                    </div>
+				</form>
+			</div>
+		</div>
+	</div>
