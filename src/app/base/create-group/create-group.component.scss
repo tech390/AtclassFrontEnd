@@ -1,6 +1,4 @@
-html , body {
-    background-color: white;
-   }
+
    .row{
     justify-content: center;
    }
@@ -34,7 +32,6 @@ html , body {
    .btn {
      background-color: rgb(178, 201, 79);
      color: aliceblue;
-   
    }
    .tales {
      width: 100%;
@@ -62,3 +59,16 @@ html , body {
      text-shadow: 1px 1px 10px #000;
      padding-bottom: 1rem;
    }
+.group-create-column{
+    float: right;
+    width: 100%;
+    padding: 30px 10px 30px 10px;
+    height: 40px;
+    font-family: cursive;
+}
+
+.submit-btn{
+    background-color: rgb(52, 67, 204);
+    color: aliceblue;
+    margin: 0px;
+}
