@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-group',
@@ -10,7 +11,7 @@ export class CreateGroupComponent implements OnInit {
   groupCreation: boolean = false;
   groupName: string;
   groupDescription: string;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -21,6 +22,7 @@ export class CreateGroupComponent implements OnInit {
   }
 
   submitGroupForm(groupForm){
-    console.log(groupForm.value)
+    console.log(groupForm.value);
+    this.router.navigateByUrl('/user/add-participants');
   }
 }

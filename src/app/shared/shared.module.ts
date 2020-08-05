@@ -6,8 +6,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule} from '@angular/material/menu';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import { FormsModule } from '@angular/forms';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const _MaterialModules = [
   LayoutModule,
@@ -15,19 +17,23 @@ const _MaterialModules = [
   MatButtonModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule,
-  MatSidenavModule
+  MatMenuModule,  
+  MatSidenavModule,
+  MatInputModule,
+  MatAutocompleteModule
 ];
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     _MaterialModules,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
