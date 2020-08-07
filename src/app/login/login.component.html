@@ -3,19 +3,19 @@
 		<div class="container-login100">
 			<div class="login100-more"></div>
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form login-form" [formGroup]="loginForm" (ngSubmit)="login()">
+				<form class="login100-form" [formGroup]="loginForm" (ngSubmit)="login()">
 					<span class="login100-form-title p-b-59">
 						Login
 					</span>
 
 					<div class="wrap-input100">
 						<span class="label-input100">User Name</span>
-						<input type="text" class="form-control input100" formControlName="username" id="exampleInputEmail1" placeholder="Enter username" required>
+						<input type="text" class="input100" formControlName="username" id="exampleInputEmail1" placeholder="Enter username" required>
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100">
 						<span class="label-input100">Password</span>
-						<input type="password" class="form-control input100" formControlName="password" id="exampleInputPassword1" placeholder="Password" required>
+						<input type="password" class="input100" formControlName="password" id="exampleInputPassword1" placeholder="Password" required>
 						<span class="focus-input100"></span>
 					</div>
 					<div class="container-login100-form-btn">
